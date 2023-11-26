@@ -36,3 +36,28 @@ main{
     height:100%;
     overflow: auto;
 }
+main .header{
+    min-height:80px;
+}
+
+
+/*
+    MEDIA QUERY
+*/
+/*desktop*/
+@media screen and (max-width:992px){
+
+}
+/*tablet*/
+@media screen and (max-width:768px){
+    aside{
+        width:50px;
+    }
+    main{
+        width:calc(100% - 50px);
+    }
+}
+/*smartphone*/
+@media screen and (max-width:576px){
+    
+}
