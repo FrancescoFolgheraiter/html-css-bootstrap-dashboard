@@ -1,45 +1,58 @@
 /*
-    RESET
+    ROOT
 */
-
+:root{
+    --height-header:60px;
+}
 
 /*
     GENERAL
 */
 
+
 html{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 .wrapper{
     display:flex;
-    height:calc(100vh - 60px );
+    height:calc(100vh - var(--height-header));
 }
+
 /*
     HEADER
 */
 header{
-    height: 60px;
+    height: var(--height-header)
 }
 
 /*
     Aside
 */
-aside{
-    width: 200px;
-}
 
 /*
     MAIN
 */
 main{
-    width:calc(100% - 200px);
-    height:100%;
-    overflow: auto;
+    overflow-y: auto;
 }
 main .header{
     min-height:80px;
 }
 
+.container-avatar{
+    width: 25px;
+}
+.container-avatar>*{
+    width: 100%;
+}
+
+th{
+    font-weight: 400;
+}
+.nome-classe{
+    width:60%;
+}
 
 /*
     MEDIA QUERY
@@ -50,12 +63,7 @@ main .header{
 }
 /*tablet*/
 @media screen and (max-width:768px){
-    aside{
-        width:50px;
-    }
-    main{
-        width:calc(100% - 50px);
-    }
+
 }
 /*smartphone*/
 @media screen and (max-width:576px){

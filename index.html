@@ -7,6 +7,8 @@
 
     <!--fonts-->
 
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--css-->
@@ -32,63 +34,181 @@
     </header>
     <!--FINE HEADER--> 
 
-    <div class="wrapper">
-        <!--INIZIO ASIDE-->
-        <aside class="bg-warning d-flex flex-column justify-content-end p-3">
-            <nav class="flex-grow-1">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Stats</a>
-                    </li>
-                    <li>
-                        <a href="#">Signals</a>
-                    </li>
-                </ul>
-            </nav>
-            <div >
-                <a href="#"> admin</a>
+    <section class="wrapper">
+        <div class="container-fluid h-100">
+            <div class="row h-100 g-0">
+                <div class="col-auto h-100">
+                    <!--INIZIO ASIDE-->
+                    <aside class="bg-warning d-flex flex-column justify-content-between p-2 h-100">
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-house me-2 fa-2x"></i><span class="d-none d-md-inline">Home</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-chart-simple me-2 fa-2x"></i><span class="d-none d-md-inline">Stats</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-signal me-2 fa-2x"></i><span class="d-none d-md-inline">Signal</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div >
+                            <a href="#"> admin</a>
+                        </div>
+                    </aside>
+                    <!--FINE ASIDE-->
+               </div>
+               <div class="col h-100">
+                   <main class="bg-danger h-100">
+                       <section class="header bg-info">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-4 col-12 order-md-0 order-1 ">Boolean</div>
+                                    <div class="col-lg-3 col-md-4 col-12 order-md-0 order-1">Studenti</div>
+                                    <div class="col-lg-2 col-md-4 col-12 order-md-1 order-0">Nuovo studente</div>
+                                </div>
+                            </div>
+                       </section>
+                       <section class="data p-3">
+                           <div class="row">
+                               <div class="col-lg-8 col-12">
+                                   <div class="row">
+                                       <div class="col-lg-12">
+                                           <div class="card mb-3">
+                                                <div class="card-header">
+                                                    Prossime classi
+                                                </div>
+                                                <div>
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th class="nome-classe" scope="col">Nome</th>
+                                                            <th scope="col">Data inizio</th>
+                                                            <th scope="col">ROI</th>
+                                                            <th scope="col">Stato</th>
+                                                            <th scope="col">Azioni</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="d-flex">
+                                                                <div class="container-avatar">
+                                                                    <img src="./img/class-avatar.jpg" alt="">
+                                                                </div>
+                                                                <div>
+                                                                    Classe 75
+                                                                </div>
+                                                            </td>
+                                                            <td>15 Feb 2021</td>
+                                                            <td>20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-12">
+                                           <div class="card mb-3">
+                                               <div class="card-header">
+                                                F.A.Q.
+                                               </div>
+                                               <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                      Come aggiungere un nuovo studente?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                      Come posso accedere alle informazioni del mio account?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                      Posso usare questa dashboard da mobile?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>    
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-4 col-12">
+                                   <div class="row">
+                                       <div class="col-lg-12">
+                                           <div class="card mb-3">
+                                               <div class="card-header mb-2">
+                                                Todo
+                                               </div>
+                                               <div class="card m-2">
+                                                   <form action="" method="post">
+                                                       <ul class="list-group list-group-flush">
+                                                           <li class="list-group-item"><input id="kickoff-classi" type="checkbox"><label for="kickoff-classi">Kickoff nuove classi</label>
+                                                           </li>
+                                                           <li class="list-group-item"><input id="lezione" type="checkbox"><label for="lezione">Lezione su Boostrap 5 in classe #75</label>
+                                                           </li>
+                                                           <li class="list-group-item"><input id="controllo-git" type="checkbox"><label for="controllo-git">Controllare username github studenti</label>
+                                                           </li>
+                                                       </ul>
+                                                   </form>
+                                               </div>
+                                           </div>
+                                           
+                                       </div>
+                                       <div class="col-lg-12">
+                                           <div class="card p-2">
+                                               <div class="card ">
+                                                   <img src="./img/stats.jpeg" class="img-fluid" alt="">
+                                                       <h3>Utenti attivi</h3>
+                                                       <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                                   <ul class="list-group list-group-flush">
+                                                     <li class="list-group-item">
+                                                       Gennario:1200
+                                                     </li>
+                                                     <li class="list-group-item">Febbraio:800</li>
+                                                     <li class="list-group-item">Marzo:1500</li>
+                                                   </ul>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </section>
+                   </main>
+               </div>
             </div>
-        </aside>
-        <!--FINE ASIDE-->
+        </div>
         <!--INIZIO MAIN-->
-        <main class="bg-danger">
-            <section class="header bg-info">
-                <div class="row">
-                    <div class="col-lg-7 col-md-4 col-12 order-md-0 order-1 ">Boolean</div>
-                    <div class="col-lg-3 col-md-4 col-12 order-md-0 order-1">Studenti</div>
-                    <div class="col-lg-2 col-md-4 col-12 order-md-1 order-0">Nuovo studente</div>
-                </div>
-            </section>
-            <section class="data">
-                <div class="row">
-                    <div class="col-lg-9 col-md-12">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                Classi
-                            </div>
-                            <div class="col-lg-12">
-                                FAQ
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                Todo
-                            </div>
-                            <div class="col-lg-12">
-                                Utenti attivi
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
         <!--FINE MAIN-->
-    </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
