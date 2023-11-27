@@ -36,12 +36,10 @@ header{
 main{
     overflow-y: auto;
 }
-main .header{
-    min-height:80px;
-}
+
 
 .container-avatar{
-    width: 25px;
+    width: 30px;
 }
 .container-avatar>*{
     width: 100%;
@@ -52,6 +50,9 @@ th{
 }
 .nome-classe{
     width:60%;
+}
+main .header{
+    background-color: #418df8;
 }
 
 /*

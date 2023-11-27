@@ -35,7 +35,7 @@
     <!--FINE HEADER--> 
 
     <section class="wrapper">
-        <div class="container-fluid h-100">
+
             <div class="row h-100 g-0">
                 <div class="col-auto h-100">
                     <!--INIZIO ASIDE-->
@@ -60,13 +60,121 @@
                     <!--FINE ASIDE-->
                </div>
                <div class="col h-100">
-                   <main class="bg-danger h-100">
-                       <section class="header bg-info">
+                   <main class="h-100">
+                       <section class="header text-white p-2">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-lg-7 col-md-4 col-12 order-md-0 order-1 ">Boolean</div>
-                                    <div class="col-lg-3 col-md-4 col-12 order-md-0 order-1">Studenti</div>
-                                    <div class="col-lg-2 col-md-4 col-12 order-md-1 order-0">Nuovo studente</div>
+                                    <div class="col-lg-7 col-md-4 col-12 order-md-0 order-1 ">
+                                        <div class="d-flex align-items-center">
+                                            <h1 class="me-2">Boolean</h1>
+                                            <span class="badge rounded-pill text-bg-primary">Piano blaze</span>                
+                                        </div>
+                                        <div class="row g-0">
+                                            <div class="col-auto">
+                                                <span class="badge rounded-pill text-bg-primary">3 app</span> >>
+                                            </div>
+                                            <div class="col d-none d-lg-block">
+                                                <span class="badge rounded-pill text-bg-primary">Boolean mobile app</span>
+                                                <span class="badge rounded-pill text-bg-primary">Boolean web app</span>
+                                                <span class="badge rounded-pill text-bg-primary">Boolean blog app</span>
+                                            </div>
+                                            <div class="col d-block d-lg-none">
+                                                <span class="badge rounded-pill text-bg-primary">+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-12 order-md-0 order-1">
+                                        <div>
+                                            Studenti online negli ultimi 30 minuti
+                                        </div>
+                                        <div>
+                                            <h2>125</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-12 order-md-1 order-0">
+                                        <div>
+                                            Nuovo studente
+                                            <!--offcanvas-->
+                                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                                <div class="offcanvas-header">
+                                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body">
+                                                    <form action="" method="post">
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <label>Nome</label>
+                                                                <input type="text" class="form-control" aria-label="First name" required>
+                                                            </div>
+                                                            <div class="col">
+                                                                <label>Cognome</label>
+                                                                <input type="text" class="form-control" aria-label="Last name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <label>Email</label>
+                                                                <div class="input-group">
+                                                                    <div class="input-group-text">@</div>
+                                                                    <input type="email" class="form-control" id="autoSizingInputGroup" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <label>Password</label>
+                                                                <input type="password" class="form-control" aria-label="Last name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <label>Indirizzo</label>
+                                                                <input type="text" class="form-control" aria-label="First name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-6">
+                                                                <label>Città</label>
+                                                                <input type="text" class="form-control" aria-label="First name" required>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <label for="">Stato</label>
+                                                                <select name="" class="form-select"  aria-label="First name" id="">
+                                                                    <option value="">Scegli...</option>
+                                                                    <option value="">Itala</option>
+                                                                    <option value="">Germania</option>
+                                                                    <option value="">Austria</option>
+                                                                    <option value="">Olanda</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <label>CAP</label>
+                                                                <input type="number" class="form-control" aria-label="First name" required>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col">
+                                                                    <label for="foto" class="form-label">Foto</label>
+                                                                    <input class="form-control" type="file" id="foto">
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <input class="form-check-input" type="checkbox" value="" id="reg-confirmed">
+                                                                <label class="form-check-label" for="reg-confirmed">
+                                                                 Selezione per proseguire
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!--fine offcanvas-->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                        </section>
@@ -127,7 +235,7 @@
                                                   </h2>
                                                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                      Clicca sul + in alto nella sezione blu.*
                                                     </div>
                                                   </div>
                                                 </div>
@@ -139,7 +247,7 @@
                                                   </h2>
                                                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                      Clicca sull'icona della campanella
                                                     </div>
                                                   </div>
                                                 </div>
@@ -151,7 +259,7 @@
                                                   </h2>
                                                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                      Si ma devi volerti molto male nella vita se desideri ciò.
                                                     </div>
                                                   </div>
                                                 </div>
@@ -164,17 +272,17 @@
                                    <div class="row">
                                        <div class="col-lg-12">
                                            <div class="card mb-3">
-                                               <div class="card-header mb-2">
+                                               <div class="card-header mb-2 todo">
                                                 Todo
                                                </div>
                                                <div class="card m-2">
                                                    <form action="" method="post">
                                                        <ul class="list-group list-group-flush">
-                                                           <li class="list-group-item"><input id="kickoff-classi" type="checkbox"><label for="kickoff-classi">Kickoff nuove classi</label>
+                                                           <li class="list-group-item"><input class="me-2" id="kickoff-classi" type="checkbox"><label for="kickoff-classi">Kickoff nuove classi</label>
                                                            </li>
-                                                           <li class="list-group-item"><input id="lezione" type="checkbox"><label for="lezione">Lezione su Boostrap 5 in classe #75</label>
+                                                           <li class="list-group-item"><input class="me-2" id="lezione" type="checkbox"><label for="lezione">Lezione su Boostrap 5 in classe #75</label>
                                                            </li>
-                                                           <li class="list-group-item"><input id="controllo-git" type="checkbox"><label for="controllo-git">Controllare username github studenti</label>
+                                                           <li class="list-group-item"><input class="me-2" id="controllo-git" type="checkbox"><label for="controllo-git">Controllare username github studenti</label>
                                                            </li>
                                                        </ul>
                                                    </form>
@@ -205,7 +313,7 @@
                    </main>
                </div>
             </div>
-        </div>
+       
         <!--INIZIO MAIN-->
         <!--FINE MAIN-->
     </section>
