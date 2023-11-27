@@ -65,18 +65,18 @@
                     <aside class="d-flex flex-column justify-content-between p-3 h-100">
                         <nav>
                             <ul class="list-unstyled">
-                                <li>
+                                <li class="p-3">
                                     <a href="#"><i class="fa-solid fa-house me-2 fa-2x"></i><span class="d-none d-lg-inline">Home</span></a>
                                 </li>
-                                <li>
+                                <li class="p-3">
                                     <a href="#"><i class="fa-solid fa-chart-simple me-2 fa-2x"></i><span class="d-none d-lg-inline">Stats</span></a>
                                 </li>
-                                <li>
+                                <li class="p-3">
                                     <a href="#"><i class="fa-solid fa-signal me-2 fa-2x"></i><span class="d-none d-lg-inline">Signal</span></a>
                                 </li>
                             </ul>
                         </nav>
-                        <div >
+                        <div class="p-3">
                             <a href="#"><i class="fa-solid fa-gear me-2 fa-2x"></i><span class="d-none d-lg-inline">admin</span></a>
                         </div>
                     </aside>
@@ -207,7 +207,7 @@
                                <div class="col-lg-8 col-12">
                                    <div class="row">
                                        <div class="col-lg-12">
-                                           <div class="card mb-3">
+                                           <div class="card mb-3 prossime-classi">
                                                 <div class="card-header">
                                                     Prossime classi
                                                 </div>
@@ -216,24 +216,26 @@
                                                         <thead>
                                                         <tr>
                                                             <th class="nome-classe" scope="col">Nome</th>
-                                                            <th scope="col">Data inizio</th>
-                                                            <th scope="col">ROI</th>
+                                                            <th class="d-none d-md-table-cell" scope="col">Data inizio</th>
+                                                            <th class="d-none d-md-table-cell" scope="col">ROI</th>
                                                             <th scope="col">Stato</th>
                                                             <th scope="col">Azioni</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td class="d-flex">
-                                                                <div class="container-avatar">
-                                                                    <img src="./img/class-avatar.jpg" alt="">
+                                                            <th scope="row">
+                                                                <div class="d-flex">
+                                                                    <div class="container-avatar me-2">
+                                                                        <img src="./img/class-avatar.jpg" alt="">
+                                                                    </div>
+                                                                    <div>
+                                                                        Classe 75
+                                                                    </div>
                                                                 </div>
-                                                                <div>
-                                                                    Classe 75
-                                                                </div>
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
                                                             <td><span class="badge rounded-pill text-bg-success">Done</span></td>
                                                             <td>
                                                                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>

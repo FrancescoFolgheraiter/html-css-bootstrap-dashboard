@@ -44,8 +44,11 @@ aside a{
     color:white;
     text-decoration: none;
 }
-aside li{
-    margin-bottom:10px;
+
+aside li:hover,
+aside>*:last-child:hover{
+    background-color: white;
+    opacity: 0.1;
 }
 
 /*
@@ -55,6 +58,9 @@ main{
     overflow-y: auto;
 }
 
+main .header{
+    background-color: #418df8;
+}
 
 .container-avatar{
     width: 30px;
@@ -69,9 +75,7 @@ th{
 .nome-classe{
     width:60%;
 }
-main .header{
-    background-color: #418df8;
-}
+
 
 /*
     MEDIA QUERY
