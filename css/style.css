@@ -25,6 +25,12 @@ html{
 header{
     height: var(--height-header)
 }
+.container-logo-mobile{
+    width:50px;
+}
+.container-logo-mobile>img{
+    width:100%;
+}
 
 /*
     Aside
@@ -64,7 +70,7 @@ main .header{
 }
 /*tablet*/
 @media screen and (max-width:768px){
-
+ 
 }
 /*smartphone*/
 @media screen and (max-width:576px){
