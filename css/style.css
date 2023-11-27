@@ -32,9 +32,21 @@ header{
     width:100%;
 }
 
+
 /*
     Aside
 */
+aside{
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+}
+aside a{
+    color:white;
+    text-decoration: none;
+}
+aside li{
+    margin-bottom:10px;
+}
 
 /*
     MAIN
